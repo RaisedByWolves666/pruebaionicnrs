@@ -22,8 +22,8 @@ getStarships() {
     return this.http.get('https://swapi.co/api/starships');
 }
 
-getVehiclestarships() {
-    return this.http.get('https://swapi.co/api/starships');
+getVehicles() {
+    return this.http.get('https://swapi.co/api/vehicles');
 }
 
 }

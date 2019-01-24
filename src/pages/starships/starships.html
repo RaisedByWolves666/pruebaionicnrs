@@ -5,14 +5,16 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Starships</ion-title>
   </ion-navbar>
-
 </ion-header>
-
-
-<ion-content padding>
-
+ 
+<ion-content>
+<ion-list>
+  <button ion-item *ngFor="let starship of (starships | async)?.results" (click)="openDetails(starship)">
+    {{ starship.name}}
+  </button>
+</ion-list>
+ 
 </ion-content>
